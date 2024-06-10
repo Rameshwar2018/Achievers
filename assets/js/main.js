@@ -639,5 +639,6 @@
         e.preventDefault();
       },
       !1
-    ),
+    )
+    
 })(jQuery);
