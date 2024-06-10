@@ -6624,7 +6624,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   inset: 0;
 }
 .th-hero-bg img {
-  height: 100%;
+  height: 50%;
   width: 100%;
   object-fit: cover;
 }
