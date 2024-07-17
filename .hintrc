@@ -33,6 +33,12 @@
       {
         "aria-valid-attr-value": "off"
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
     ]
   }
 }
