@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AWS with DevOps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/up.css">
+</head>
+
+<body class="gradient-body">
+   <!-- Mobile Nav Section Start -->
+   <div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle">
+            <i class="fal fa-times"></i>
+        </button>
+        <div class="mobile-logo">
+            <a href="index.html"><img src="logos/logo-o.svg" alt="achieverstech"></a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="menu-item-has-children"><a href="courses.html">Courses</a>
+                    <ul class="sub-menu">
+                        <li><a href="software-testing.html">Software Testing</a></li>
+                        <li><a href="angular.html">Angular Development</a></li>
+                        <li><a href="java.html">Java Development</a></li>
+                        <li><a href="dotnet.html">Dot Net</a></li>
+                        <li><a href="fullstack.html">Full Stack Development</a></li>
+                        <li><a href="aws-devops.html">AWS/DevOps</a></li>
+                    </ul>
+                </li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="upcomming-batches.html">Upcoming Batches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Mobile Nav Section End -->
+
+<!-- Header Section Start -->
+<header class="th-header header-layout2">
+    <div class="header-top bg-title">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                <div class="col-auto d-none d-lg-block">
+                    <div class="header-links">
+                        <ul>
+                            <li><i class="fas fa-phone"></i><a href="tel:+918484039108">+91-8484039108</a> | <a
+                                    href="tel:+918484049108">+91-8484049108</a></li>
+                            <li><i class="fas fa-envelope"></i>
+                                <ahref="mailto:info@achievertech.co.in">info@achievertech.co.in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="header-social">
+                        <span class="social-title">Follow Us On : </span>
+                        <a href="https://www.facebook.com/share/navjdEVU7AV3aMbX/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://chat.whatsapp.com/FsfwKABX9bE0Ag9aoGyYJS "><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/achieverstech_it?igsh=Z2J0aHJyeGt4bGN5"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Navigation Section Start -->
+    <div class="sticky-wrapper">
+        <div class="menu-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="header-logo">
+                            <a class="icon-masking" href="index.html">
+                                <img src="logos/logo-o.svg" alt="achieverstech">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class="main-menu d-none d-lg-inline-block">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="courses.html">Courses</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="software-testing.html">Software Testing</a></li>
+                                        <li><a href="angular.html">Angular Development</a></li>
+                                        <li><a href="java.html">Java Development</a></li>
+                                        <li><a href="dotnet.html">Dot Net</a></li>
+                                        <li><a href="fullstack.html">Full Stack Development</a></li>
+                                        <li><a href="aws-devops.html">AWS/DevOps</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="jobs.html">Jobs</a></li>
+                                <li><a href="upcomming-batches.html">Upcoming Batches</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-button">
+                            <button type="button"
+                                class="icon-btn th-menu-toggle d-inline-block d-lg-none ideMenuToggler d-inline-block d-lg-none">
+                                <i class="far fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Section End -->
+</header>
+<!-- Header Section End -->
+
+    <section class="position-relative space">
+        <div class="th-bg-img background-image" style="background-image: url(&quot;assets/img/bg/cta_bg_2.jpg&quot;);">
+            <img src="assets/img/bg/bg_overlay_1.png" alt="overlay">
+        </div>
+        <div class="container z-index-common">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+                    <div class="title-area mb-35"><span class="sub-title">
+                            <div class="icon-masking me-2"><span class="mask-icon bg-mask"
+                                    style="mask-image: url(&quot;assets/img/theme-img/title_shape_2.svg&quot;);"></span>
+                                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                            </div>AWS DevOps
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="widget-area">
+        <div class="container mt-5 px-3">
+            <h5 class="text-center mb-35">Course Curriculum
+            </h5>
+            <div class="accordion" id="accordionExample">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-0" aria-expanded="false"
+                                    aria-controls="collapseOne">Introduction</button>
+                            </h2>
+                            <div id="collapse-0" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is SDLC ?</li>
+                                        <li>Waterfall vs Agile vs Lean Methodology</li>
+                                        <li>Devops History Lifecycle</li>
+                                        <li>Need of Devops, Roles Responsibilities</li>
+                                        <li>Devops Goals, Tools Roadmap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-1" aria-expanded="false"
+                                    aria-controls="collapseOne">Software
+                                    Architectures</button>
+                            </h2>
+                            <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Types of architectures</li>
+                                        <li>Client, Application, Database layer</li>
+                                        <li>One, Two, Three, N-teir Architecure</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapseOne">Web
+                                    App
+                                    servers</button>
+                            </h2>
+                            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is a web webapp server ?</li>
+                                        <li>Httpd, Nginx, IIS, Tomcat Servers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapseOne">AWS
+                                    Cloud</button>
+                            </h2>
+                            <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is virtualization ?</li>
+                                        <li>Advantages Disadvantages</li>
+                                        <li>What is cloud computing ?</li>
+                                        <li>What is AWS ?</li>
+                                        <li>AWS Service Deployment Models</li>
+                                        <li>AWS Certifications</li>
+                                        <li>Identity and Access Management (IAM)</li>
+                                        <li>Elastic Compute Cloud (EC2) Service Security</li>
+                                        <li>Amazon Elastic Block Store</li>
+                                        <li>Networking Basics</li>
+                                        <li>Amazon Virtual Private Cloud (VPC) Its Components</li>
+                                        <li>Elastic Load Balancing (ELB)</li>
+                                        <li>Amazon EC2 Auto Scaling</li>
+                                        <li>Amazon S3 Simple Storage Service</li>
+                                        <li>Amazon RDS (Relational Database Service)</li>
+                                        <li>Amazon Route 53, CDN, KMS</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-4" aria-expanded="false"
+                                    aria-controls="collapseOne">Source Code
+                                    Management – GIT</button>
+                            </h2>
+                            <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is VCS ? Its History</li>
+                                        <li>Types of Source Code Management Tools</li>
+                                        <li>Git Vs GitHub Git Operations</li>
+                                        <li>Types of Version Control System</li>
+                                        <li>Git installation, lifecycle and workflow</li>
+                                        <li>Different Stages in Git </li>
+                                        <li>Repositories (local, central, remote)</li>
+                                        <li>Git user config</li>
+                                        <li>Git pull, push, merge, stash</li>
+                                        <li>Git checkout, branch, commit, cherry pick</li>
+                                        <li>Git logs , log vs refLog</li>
+                                        <li>Merge conflicts, git ignore</li>
+                                        <li>Branching strategies</li>
+                                        <li>Other real time git usefull commands</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-5" aria-expanded="false"
+                                    aria-controls="collapseOne">Source Code
+                                    Management – GIT HUB</button>
+                            </h2>
+                            <div id="collapse-5" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Git repos (Private Public)</li>
+                                        <li>How to create Public Private Repos</li>
+                                        <li>Integrating Repos Forking </li>
+                                        <li>Linking projects</li>
+                                        <li>Tokens, compare pull request</li>
+                                        <li>Renaming repos User management</li>
+                                        <li>Archiving Deleting repos</li>
+                                        <li>Accessing the private repos</li>
+                                        <li>Advantages disadvantages</li>
+                                        <li>Assigning Roles</li>
+                                        <li>Difference between git and other tools</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapseOne">Build
+                                    Tool –
+                                    MAVEN</button>
+                            </h2>
+                            <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is Build Tool ?</li>
+                                        <li>Introduction to Maven</li>
+                                        <li>Maven objectives Architecture</li>
+                                        <li>Maven goals Build life cycle</li>
+                                        <li>Project information Features</li>
+                                        <li>Requirements Plugins</li>
+                                        <li>pom.xml and Types</li>
+                                        <li>Maven directory structure</li>
+                                        <li>Java project structure</li>
+                                        <li>Problems without maven</li>
+                                        <li>Maven vs ANT vs Gradle</li>
+                                        <li>Execution</li>
+                                        <li>Sample Application using MSBuild</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapseOne">Code
+                                    Artifact Storage</button>
+                            </h2>
+                            <div id="collapse-7" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Intro to JFROG</li>
+                                        <li>Use cases Setup</li>
+                                        <li>Creating repo Creating users</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapseOne">Sonar
+                                    Static code
+                                    analysis</button>
+                            </h2>
+                            <div id="collapse-8" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is SonarQube?</li>
+                                        <li>Setup Configuration</li>
+                                        <li>SonarQube Advantages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-9" aria-expanded="false"
+                                    aria-controls="collapseOne">LAMP</button>
+                            </h2>
+                            <div id="collapse-9" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is LAMP stack ?</li>
+                                        <li>LAMP Setup ?</li>
+                                        <li>Usage of LAMP stack ?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-10" aria-expanded="false"
+                                    aria-controls="collapseOne">Terraform</button>
+                            </h2>
+                            <div id="collapse-10" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>What is IAAC ?</li>
+                                        <li>What is Terraform ?</li>
+                                        <li>Advantages of Terraform ?</li>
+                                        <li>How Terraform Works ?</li>
+                                        <li>What is Terraform Statefile ?</li>
+                                        <li>Terraform Installation</li>
+                                        <li>Terraform cli</li>
+                                        <li>S3 Backened Setup</li>
+                                        <li>Alias providers</li>
+                                        <li>Terraform State Locking Setup </li>
+                                        <li>Variables Locals, Comments</li>
+                                        <li>Terraform validate plan</li>
+                                        <li>Terraform apply, destroy, outputs update</li>
+                                        <li>Terraform loops, workspaces, outputs</li>
+                                        <li>Creating vpc, ec2,rds, s3, ebs, efs and other </li>
+                                        <li>Terraform multiple tfvar files</li>
+                                        <li>Versions Dynamic block</li>
+                                        <li>Terraform import, taint</li>
+                                        <li>Terraform refresh, replace, target</li>
+                                        <li>Terraform lifecycle</li>
+                                        <li>Create before destroy Prevent destroy</li>
+                                        <li>Terraform modules</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-11" aria-expanded="false"
+                                    aria-controls="collapseOne">Containerization
+                                    using Docker</button>
+                            </h2>
+                            <div id="collapse-11" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Microservices introduction</li>
+                                        <li>Monlithic vs Microservices</li>
+                                        <li>Virtualization intro</li>
+                                        <li>What is containrization ?</li>
+                                        <li>Docker vs Vms vs Servers</li>
+                                        <li>Docker architecture</li>
+                                        <li>intro to docker Installation</li>
+                                        <li>Docker Client Deamon</li>
+                                        <li>Docker Files and Instructions ?</li>
+                                        <li>Create images from Docker files</li>
+                                        <li>Docker Network Types</li>
+                                        <li>Docker Volumes Types</li>
+                                        <li>Docker real-time basic commands</li>
+                                        <li>Run vs cmd vs entrypoint</li>
+                                        <li>Add vs copy</li>
+                                        <li>Docker pull, push, build</li>
+                                        <li>Working with containers</li>
+                                        <li>Build image from container</li>
+                                        <li>Ways of container creation</li>
+                                        <li>Docker port mapping</li>
+                                        <li>Docker multistage build</li>
+                                        <li>Creating jenkins by docker</li>
+                                        <li>Docker Registry</li>
+                                        <li>Docker registry types</li>
+                                        <li>Docker login Image pushing to registry</li>
+                                        <li>Docker hub account creation</li>
+                                        <li>Docker swarm compose overview</li>
+                                        <li>Docker stack</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-12" aria-expanded="false"
+                                    aria-controls="collapseOne">Monitoring -
+                                    Prometheus Grafana</button>
+                            </h2>
+                            <div id="collapse-12" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Intro to Prometheus, Grafana, Node Exporter</li>
+                                        <li>Archictecture Components</li>
+                                        <li>Installation of each component</li>
+                                        <li>Exploring Importing Grafana dashboard</li>
+                                        <li>Server monitoring and Logging</li>
+                                        <li>Loki Promtail</li>
+                                        <li>Use cases of loki and promtail</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-13" aria-expanded="false"
+                                    aria-controls="collapseOne">Monitoring –
+                                    Nagios</button>
+                            </h2>
+                            <div id="collapse-13" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>About Nagios Its Installation</li>
+                                        <li>Master-Slave Configuration</li>
+                                        <li>Configuring with Tomcat Server with Master Node</li>
+                                        <li>Summary</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-14" aria-expanded="false"
+                                    aria-controls="collapseOne">Configuration
+                                    Management Tool – Ansible</button>
+                            </h2>
+                            <div id="collapse-14" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Ansible Introduction History</li>
+                                        <li>Ansible Architecture Usecases</li>
+                                        <li>Ansible inventory host pattern</li>
+                                        <li>Ad-hoc commands Working with adhoc</li>
+                                        <li>Ansible modules introduction</li>
+                                        <li>Working with ansible modules</li>
+                                        <li>Ansible playbooks</li>
+                                        <li>Package Installation and Uninstallation</li>
+                                        <li>Ansible variables, handlers, loops</li>
+                                        <li>Ansible conditions, vault, roles</li>
+                                        <li>Ansible tags, dry run, pip</li>
+                                        <li>Ansible galaxy, Roles and more modules</li>
+                                        <li>Ansible Builtin Modules</li>
+                                        <li>Ansible jinja2 templates</li>
+                                        <li>Creating local resources</li>
+                                        <li>Ansible git integration</li>
+                                        <li>Deploying Ec2 instance Tomcat webapp server</li>
+                                        <li>Admin activities Server metrics collections</li>
+                                        <li>Jenkins Docker with ansible</li>
+                                        <li>Static Website using Playbook</li>
+                                        <li>Advantages Disadvantages</li>
+                                        <li>Ansible Alternatives</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-15" aria-expanded="false"
+                                    aria-controls="collapseOne">Continuous
+                                    Integration tool – Jenkins</button>
+                            </h2>
+                            <div id="collapse-15" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Introduction to Jenkins</li>
+                                        <li>Installation and Setup</li>
+                                        <li>Jenkins Architecture</li>
+                                        <li>Creating and Configuring Jobs</li>
+                                        <li>Version Control Integration</li>
+                                        <li>Master – slave architecture, setup</li>
+                                        <li>Build Pipelines, Reports</li>
+                                        <li>Jenkins Agent Setup</li>
+                                        <li>Jenkinsfile and Pipeline as Code</li>
+                                        <li>Continuous Deployment with Jenkins</li>
+                                        <li>Workspaces, Webhooks Linked Projects</li>
+                                        <li>Enviornment Variables and Multi Stage Builds</li>
+                                        <li>Artifact Management in Jenkins</li>
+                                        <li>Jenkins Integration with Docker, SonarQube, Tomcat </li>
+                                        <li>Continuous Deployment with Jenkins</li>
+                                        <li>Triggers, Cron Jobs, Plugins and Extensions</li>
+                                        <li>Parameterized Builds</li>
+                                        <li>Distributed Builds</li>
+                                        <li>Security in Jenkins</li>
+                                        <li>Troubleshooting Jenkins Builds and Pipelines</li>
+                                        <li>Jenkins Backup, Monitoring and Logging</li>
+                                        <li>Miscellaneous or additional topics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container space-top"></div>
+        <div class="container">
+            <section class="arrow-wrap shape-mockup-wrap" id="team-sec">
+                <div class="brand-sec1 arrow-wrap" data-pos-for="#process-sec" data-sec-pos="top-half"
+                    style="margin-top: -95px;">
+                    <div class="container py-5">
+                        <div class="slider-area text-center">
+                            <div class="swiper th-slider swiper-initialized swiper-horizontal" id="brandSlider1"
+                                data-slider-options="{&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;slidesPerView&quot;:2},&quot;576&quot;:{&quot;slidesPerView&quot;:&quot;2&quot;},&quot;768&quot;:{&quot;slidesPerView&quot;:&quot;3&quot;},&quot;992&quot;:{&quot;slidesPerView&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;slidesPerView&quot;:&quot;4&quot;},&quot;1400&quot;:{&quot;slidesPerView&quot;:&quot;5&quot;}}}">
+                                <div class="swiper-wrapper" id="swiper-wrapper-5997d152d487a9af" aria-live="off"
+                                    style="transition-duration: 1000ms; transform: translate3d(-746.4px, 0px, 0px);">
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="14 / 24" data-swiper-slide-index="6">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_1.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="8 / 12" data-swiper-slide-index="7">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-prev" style="width: 224.8px; margin-right: 24px;"
+                                        role="group" aria-label="9 / 12" data-swiper-slide-index="8">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-active" style="width: 224.8px; margin-right: 24px;"
+                                        role="group" aria-label="10 / 12" data-swiper-slide-index="9">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" style="width: 224.8px; margin-right: 24px;"
+                                        role="group" aria-label="11 / 12" data-swiper-slide-index="10">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="12 / 12"
+                                        style="width: 224.8px; margin-right: 24px;" data-swiper-slide-index="11">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="1 / 12" data-swiper-slide-index="0">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_1.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="2 / 12" data-swiper-slide-index="1">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="3 / 12" data-swiper-slide-index="2">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="4 / 12" data-swiper-slide-index="3">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="5 / 12" data-swiper-slide-index="4">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 224.8px; margin-right: 24px;" role="group"
+                                        aria-label="6 / 12" data-swiper-slide-index="5">
+                                        <div class="brand-box py-20"><img src="assets/img/brand/brand_2_6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div><button data-slider-prev="#brandSlider1" class="slider-arrow style3 slider-prev"><i
+                                    class="far fa-arrow-left"></i></button> <button data-slider-next="#brandSlider1"
+                                class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="shape-mockup" style="top: 0px; right: 0px;"></div>
+                <div class="shape-mockup" style="top: 0%; left: 0%;"></div>
+            </section>
+        </div> -->
+        <div class="container mt-5 px-3">
+            <div class="gx-5 training-features">
+                <h5 class="text-theme">Training Features </h5>
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources1.png" width="64" class="mb-0" alt="cource1">
+                            </div>
+                            <h5 class="lead">
+                                Comprehensive Course Curriculum
+                            </h5>
+                            <p>Elevate your career with essential soft skills training for effective communication,
+                                professional success.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources2.png" width="64" class="mb-4" alt="cource2">
+                            </div>
+                            <h5 class="lead">
+                                Experienced Industry Professionals
+                            </h5>
+                            <p>Learn from trainers with extensive experience in the industry, offering real-world
+                                insights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources3.png" width="64" class="mb-4" alt="cource3">
+                            </div>
+                            <h5 class="lead">
+                                24/7 Learning Access
+                            </h5>
+                            <p>Enjoy round-the-clock access to course materials and resources for flexible learning.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources4.png" width="64" class="mb-4" alt="cource4">
+                            </div>
+                            <h5 class="lead">
+                                Comprehensive Placement Programs
+                            </h5>
+                            <p>Benefit from specialized programs focused on securing job opportunities post-training.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources5.png" width="64" class="mb-4" alt="cource5">
+                            </div>
+                            <h5 class="lead">
+                                Hands-on Practice
+                            </h5>
+                            <p>Learn by doing with hands-on practice, mastering skills through real-world projects</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-5 mb-lg-0 ">
+                        <div class="border p-4 rounded feature-icon-box">
+                            <div>
+                                <img src="./assets/img/cources/cources6.png" width="64" class="mb-4" alt="cource5">
+                            </div>
+                            <h5 class="lead">
+                                One to One Sessions
+                            </h5>
+                            <p>Sessions with experiance mentor's ensures learning Excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-wrapper footer-layout3 background-image"
+        style="background-image: url(assets/img/bg/footer_bg_2.jpg);">
+
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xxl-3 col-xl-4">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">About Us</h3>
+                            <div class="th-widget-about">
+                                <p class="about-text">We are passionate about shaping the next generation of tech
+                                    talent. In Achievers Tech our Trained software trainers provide real-world expertise
+                                    and industry insights to our training and placement programs</p>
+                                <div class="th-social">
+                                    <a href="https://www.facebook.com/share/navjdEVU7AV3aMbX/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://chat.whatsapp.com/FsfwKABX9bE0Ag9aoGyYJS"><i class="fab fa-whatsapp"></i></a> 
+                                    <a href="https://www.instagram.com/achieverstech_it?igsh=Z2J0aHJyeGt4bGN5"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">OUR Courses</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="software-testing.html">Software Testing</a></li>
+                                    <li><a href="angular.html">Angular Development</a></li>
+                                    <li><a href="java.html">Java Development</a></li>
+                                    <li><a href="dotnet.html">Dot Net</a></li>
+                                    <li><a href="fullstack.html">Full Stack Development</a></li>
+                                    <li><a href="aws-devops.html">AWS/DevOps</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Recent Events</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="#"><img src="assets/img/blog/recent-post-2-1.jpg"
+                                                alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Weekend Live Project
+                                                Sessions.</a>
+                                        </h4>
+                                        <div class="recent-post-meta"><a href="#"><i class="fal fa-calendar-days"></i>09
+                                                June, 2024</a></div>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="#"><img src="assets/img/blog/recent-post-2-2.jpg"
+                                                alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <h4 class="post-title"><a class="text-inherit" href="#">Mock Interviews</a></h4>
+                                        <div class="recent-post-meta"><a href="#"><i class="fal fa-calendar-days"></i>06
+                                                June, 2024</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap bg-title">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a
+                                href="#">Achieverstech</a>. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-end d-none d-lg-block">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="about.html">Terms &amp; Condition</a></li>
+                                <li><a href="about.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <div class="body-particle" id="body-particle"></div>
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
