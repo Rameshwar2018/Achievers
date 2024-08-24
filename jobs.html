@@ -360,7 +360,7 @@ style="background-image: url(assets/img/bg/footer_bg_2.jpg);">
 
             const filteredJobs = jobListings.filter(job => {
                 return (
-                    (job.title.toLowerCase().includes(searchTerm) || job.position.toLowerCase().includes(searchTerm)) &&
+                    (job.title.toLowerCase().includes(searchTerm) || job.companyName.toLowerCase().includes(searchTerm) || job.position.toLowerCase().includes(searchTerm)) &&
                     (selectedLocation === '' || job.city === selectedLocation) &&
                     (selectedCategory === '' || job.category === selectedCategory)
                 );
