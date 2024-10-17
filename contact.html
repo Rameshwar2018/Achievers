@@ -70,9 +70,12 @@
                     <div class="col-auto">
                         <div class="header-social">
                             <span class="social-title">Follow Us On : </span>
-                            <a href="https://www.facebook.com/share/navjdEVU7AV3aMbX/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://chat.whatsapp.com/FsfwKABX9bE0Ag9aoGyYJS "><i class="fab fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/achieverstech_it?igsh=Z2J0aHJyeGt4bGN5"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/navjdEVU7AV3aMbX/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://chat.whatsapp.com/FsfwKABX9bE0Ag9aoGyYJS "><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/achieverstech_it?igsh=Z2J0aHJyeGt4bGN5"><i
+                                    class="fab fa-instagram"></i></a>
                             <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
@@ -224,11 +227,12 @@
                 <div class="col-xl-6">
                     <div class="appointment-area-wrapp">
                         <h6 class="title">Please fill in the information below</h6>
-                        
-                        <form action="https://formcarry.com/s/XDJz5wkrz3y" class="appointment-form3 formcarryForm" method="POST" enctype="multipart/form-data">
+
+                        <!-- <form action="https://api.web3forms.com/submit" class="appointment-form3 formcarryForm" method="POST">
+                            <input type="hidden" name="access_key" value="87da4ab4-6cd9-45a2-81a2-81ef-e5b3dc5058d1">
                             <div class="form-group col-12">
                                 <label for="fc-generated-1-name">Full Name</label>
-                                <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+                                <input type="text" name="name"  placeholder="Your first and last name" />
                               </div>
                                 
                               <div class="form-group col-12">
@@ -245,7 +249,69 @@
                                 <button type="submit" class="th-btn btn-fw">Send</button>
                               </div>
                             
+                        </form> -->
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form"
+                            class="needs-validation appointment-form3">
+                            <input type="hidden" name="access_key" value="87da4ab4-6cd9-45a2-81ef-e5b3dc5058d1" />
+                            <input type="hidden" name="subject" value="New Enquiry From Website" />
+                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                            <div class="flex mb-6 space-x-4">
+                                <div class="form-group col-12">
+                                    <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First
+                                        Name</label>
+                                    <input type="text" name="name" id="first_name" placeholder="John" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last
+                                        Name</label>
+                                    <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex mb-6 space-x-4">
+                                <div class="form-group col-12">
+                                    <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email
+                                        Address</label>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email address" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone
+                                        Number</label>
+                                    <input type="text" name="phone" id="phone" placeholder="Enter your mobile number" required
+                                        class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your
+                                    Message</label>
+
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                    class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                                    required></textarea>
+                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <button type="submit" class="th-btn btn-fw">
+                                    Send Message
+                                </button>
+                            </div>
+                            <p class="text-base text-center text-gray-400" id="result"></p>
                         </form>
+
                     </div>
                 </div>
             </div>
